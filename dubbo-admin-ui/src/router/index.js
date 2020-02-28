@@ -30,11 +30,17 @@ import ServiceTest from '@/components/test/ServiceTest'
 import ServiceMock from '@/components/test/ServiceMock'
 import ServiceMetrics from '@/components/metrics/ServiceMetrics'
 import Management from '@/components/Management'
+import Group from '@/components/group/Group'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/group',
+      name: 'Group',
+      component: Group
+    },
     {
       path: '/service',
       name: 'ServiceSearch',

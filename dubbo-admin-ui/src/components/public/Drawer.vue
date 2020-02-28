@@ -31,6 +31,12 @@
       </v-toolbar-title>
     </v-toolbar>
 
+    <v-layout column align-center>
+      <v-flex class="mt-4 mb-3">
+        <Group/>
+      </v-flex>
+    </v-layout>
+
     <v-list expand>
       <template v-for="(item, i) in menus">
         <v-list-group v-if="item.items" :group="item.group" :prepend-icon="item.icon" no-action>
@@ -68,6 +74,7 @@
 
 <script>
   import menu from '@/api/menu'
+  import Group from '@/components/group/Group'
 
   export default {
     name: 'drawer',
@@ -80,6 +87,9 @@
       window.getApp.$on('DRAWER_TOGGLED', () => {
         this.drawer = (!this.drawer)
       })
+    },
+    components: {
+      Group
     },
     computed: {
       sideToolbarColor () {
