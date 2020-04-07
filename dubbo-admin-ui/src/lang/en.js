@@ -26,7 +26,10 @@ export default {
   loadBalance: 'Load Balance',
   serviceTest: 'Service Test',
   serviceMock: 'Service Mock',
+  serviceMetrics: 'Service Metrics',
+  serviceRelation: 'Service Relation',
   metrics: 'Metrics',
+  relation: 'Relation',
   group: 'Group',
   serviceInfo: 'Service Info',
   providers: 'Providers',
@@ -153,5 +156,8 @@ export default {
   methods: 'Methods',
   testModule: {
     searchServiceHint: 'Service ID, org.apache.dubbo.demo.api.DemoService, * for fuzzy search, press Enter to search'
-  }
+  },
+  userName: 'User Name',
+  password: 'Password',
+  login: 'Login'
 }

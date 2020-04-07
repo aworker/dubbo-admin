@@ -18,6 +18,8 @@ export default {
   service: '服务',
   serviceSearch: '服务查询',
   serviceGovernance: '服务治理',
+  serviceMetrics: '服务统计',
+  serviceRelation: '服务关系',
   routingRule: '条件路由',
   tagRule: '标签路由',
   dynamicConfig: '动态配置',
@@ -29,6 +31,7 @@ export default {
   providers: '提供者',
   consumers: '消费者',
   metrics: '统计',
+  relation: '关系',
   group: '组',
   version: '版本',
   app: '应用',
@@ -153,5 +156,8 @@ export default {
   methods: '方法列表',
   testModule: {
     searchServiceHint: '服务ID, org.apache.dubbo.demo.api.DemoService, 使用 * 进行模糊查找, 按回车键查询'
-  }
+  },
+  userName: '用户名',
+  password: '密码',
+  login: '登录'
 }
